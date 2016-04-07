@@ -1,0 +1,12 @@
+### Mac ###
+.DS_Store
+
+### Node ###
+logs
+*.log
+npm-debug.log*
+node_modules
+
+### Project ###
+dist
+.env

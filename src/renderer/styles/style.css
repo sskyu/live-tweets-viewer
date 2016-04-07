@@ -1,0 +1,43 @@
+body {
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+}
+
+.container-main-wrapper {
+}
+
+
+.component-tweet-wrapper {
+  display: flex;
+  width: max-content;
+  margin: 16px;
+  padding: 8px;
+  pointer-events: none;
+}
+
+.component-tweet-thumbnail {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+}
+
+.component-tweet-body {
+  margin: 0 0 0 8px;
+}
+
+.component-tweet-name {
+  font-size: responsive 0.7rem 1rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #fff,
+               -1px 1px 1px #fff,
+               1px -1px 1px #fff,
+               -1px -1px 1px #fff;
+}
+
+.component-tweet-text {
+  font-size: responsive 1.5rem 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #fff,
+               -2px 2px 2px #fff,
+               2px -2px 2px #fff,
+               -2px -2px 2px #fff;
+}
