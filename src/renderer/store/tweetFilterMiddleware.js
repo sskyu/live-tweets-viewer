@@ -1,5 +1,7 @@
 import * as types from '../constants/actionTypes';
-import { purgeTweet } from '../actions/tweet';
+import actions from '../actions';
+
+const { purgeTweet } = actions.tweets;
 
 export default function tweetFilterMiddleware(store) {
   return next => action => {

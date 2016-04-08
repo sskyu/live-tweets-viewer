@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { TransitionMotion, spring } from 'react-motion';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as tweetActions from '../actions/tweet';
-import { initTweets, hideTweet } from '../actions/tweet';
+import actions from '../actions';
 import Tweet from '../components/Tweet';
 
 function mapStateToProps(state) {
@@ -14,7 +13,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    tweetActions: bindActionCreators(tweetActions, dispatch)
+    tweetActions: bindActionCreators(actions.tweets, dispatch)
   };
 }
 
